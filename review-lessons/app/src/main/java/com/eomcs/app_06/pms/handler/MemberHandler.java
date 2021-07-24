@@ -26,6 +26,8 @@ public class MemberHandler {
 		member.registeredDate = new Date(System.currentTimeMillis());
 
 		this.members[this.size++] = member;
+		// boards[size] = board;
+		// size++;
 	}
 
 	public void list() {
@@ -116,22 +118,28 @@ public class MemberHandler {
 				break;
 			}
 		}
+
 		if (index == -1) {
 			System.out.println("해당 번호의 회원이 없습니다.");
 			return;
 		}
-		
+
 		String input = Prompt.inputString("정말 삭제하시겠습니까? (y/N)");
 		if (input.equalsIgnoreCase("n") || input.length() == 0) {
 			System.out.println("회원 삭제를 취소하였습니다.");
 			return;
 		}
-		
+
 		for (int i = index + 1; i < this.size; i ++) {
 			this.members[i - 1] = this.members[i];
 		}
 		this.members[--this.size] = null;
-		
+		//for (int i = index; i < size - 1; i++) {
+		//	boards[i] = boards[i+1];
+		//}
+		//size --;
+		//boards[size] = null;
+
 		System.out.println("회원을 삭제하였습니다.");
 	}
 
