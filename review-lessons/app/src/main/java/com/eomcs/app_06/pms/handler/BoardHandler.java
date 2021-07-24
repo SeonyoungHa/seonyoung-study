@@ -1,9 +1,9 @@
-package com.eomcs.pms.handler;
+package com.eomcs.app_06.pms.handler;
 
 import java.sql.Date;
 
-import com.eomcs.pms.domain.Board;
-import com.eomcs.util.Prompt;
+import com.eomcs.app_06.pms.domain.Board;
+import com.eomcs.app_06.util.Prompt;
 
 public class BoardHandler {
 

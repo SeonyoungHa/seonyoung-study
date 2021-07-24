@@ -1,7 +1,7 @@
-package com.eomcs.pms.handler;
+package com.eomcs.app_06.pms.handler;
 
-import com.eomcs.pms.domain.Project;
-import com.eomcs.util.Prompt;
+import com.eomcs.app_06.pms.domain.Project;
+import com.eomcs.app_06.util.Prompt;
 
 public class ProjectHandler {
 
