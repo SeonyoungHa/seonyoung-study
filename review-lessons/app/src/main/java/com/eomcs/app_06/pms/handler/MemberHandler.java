@@ -152,10 +152,3 @@ public class MemberHandler {
 		return false;
 	}
 }
-
-
-
-
-
-
-
