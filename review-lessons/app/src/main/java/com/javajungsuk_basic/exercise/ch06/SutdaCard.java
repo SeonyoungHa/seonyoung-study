@@ -18,4 +18,8 @@ class SutdaCard{
 		this.num = num;
 		this.isKwang = isKwang;
 	}
+
+	String info() {
+		return num + (isKwang? "K" : "");
+	}
 }
