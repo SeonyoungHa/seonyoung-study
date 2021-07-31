@@ -1,5 +1,5 @@
 package com.javajungsuk_basic.exercise.ch06;
-class prac6_1_2 {
+class Exercise6_2 {
 	public static void main(String args[]) {
 		SutdaCard card1 = new SutdaCard(3, false);
 		SutdaCard card2 = new SutdaCard();
