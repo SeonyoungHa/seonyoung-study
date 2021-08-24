@@ -7,18 +7,19 @@ public class Exam0410Practice {
     double compute(int money);
   }
 
+  // 팩토리 메서드
+  // => Interest 구현체를 생성하여 리턴하는 메서드 
+  //
   static Interest getInterest(final double rate) {
     // 로컬 클래스로 인터페이스 구현한 후 객체 리턴하기
-    // => 객체를 한 개만 생성할 것이라면 익명 클래스로 정의하라.
-
-    class InterestImpl implements Interest {
+    Interest i = new Interest (){
 
       @Override
       public double compute(int money) {
         return money + (money * rate / 100);
       }
-    }
-    return new InterestImpl();
+    };
+    return i;
   }
 
   public static void main(String[] args) {
